@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Choose your own adventure!</title>
+
+  </head>
+
+  <body>
+
+<h1>Choose your own adventure!</h1>
+
+<script>
+
+var fork = prompt("You have come to a fork in the road. Do you go LEFT or RIGHT?").toUpperCase();
+
+if (fork === "LEFT") {
+    var speed = prompt("You turned left! Are you walking FAST or SLOW?").toUpperCase();}
+else if (fork === "RIGHT") {
+    var speed = prompt("You turned right! Are you walking FAST or SLOW?").toUpperCase();}
+
+if (speed === "FAST") {
+        document.write("You lose... you are going too fast!");}
+else if (speed === "SLOW") {
+        document.write("You lose... you are going too slow!");}
+else {
+      document.write("That wasn't one of the choices. Refresh your browser to start over.")}
+
+</script>
+
+</body>
+</html>
